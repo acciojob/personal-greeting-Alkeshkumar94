@@ -10,7 +10,7 @@ const Greeting = () => {
 
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+    <div>
      <label>
         <p>Enter your name:</p>
         <input type="text" value={name} onChange={handleChange} />
