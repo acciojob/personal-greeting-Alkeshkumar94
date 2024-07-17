@@ -11,12 +11,9 @@ const Greeting = () => {
 
   return (
     <div>
-     <label>
         <p>Enter your name:</p>
         <input type="text" value={name} onChange={handleChange} />
-      </label>
       {name && <h2>Hello {name}!</h2>}
-    </div>
   );
 };
 
