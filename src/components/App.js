@@ -1,14 +1,24 @@
+// src/App.js
+import React, { useState } from 'react';
 
-import React from "react";
-import './../styles/App.css';
+function App() {
+  const [name, setName] = useState('');
+  const handleInputChange = (e) => {
+    setName(e.target.value);
+  };
 
-import Greeting from './greeting'; // Adjust the path as necessary
 
-const App = () => {
   return (
-    <div>
-      <Greeting />
+    <div className="App">
+      <h1>Enter your name:</h1>
+      <input
+        type="text"
+        value={name}
+        onChange={handleInputChange}
+      />
+      {name&& <h2>Hello {name}!</h2>}
     </div>
   );
-};
-export default App
+}
+
+export default App;
