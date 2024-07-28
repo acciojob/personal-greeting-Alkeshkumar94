@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Enter your name:</h1>
+      <p>Enter your name:</p>
       <input
         type="text"
         value={name}
         onChange={handleInputChange}
       />
-      {name&& <h2>Hello {name}!</h2>}
+      {name&& <p>Hello {name}!</p>}
     </div>
   );
 }
