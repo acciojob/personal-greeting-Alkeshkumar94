@@ -16,7 +16,10 @@ function App() {
         value={name}
         onChange={handleInputChange}
       />
-      {name && <p>Hello {name}!</p>}
+     
+     <p>      Enter your name:{' '}
+        {name ? `Hello ${name}!` : ''}
+  </p>
     </div>
   );
 }
