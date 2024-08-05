@@ -17,7 +17,7 @@ function App() {
         onChange={handleInputChange}
       />
      
-     <p>Enter your name: {name ? `Hello ${name}!` : ''}</p>
+     <p>{name ? `Hello ${name}!` : ''}</p>
     </div>
   );
 }
